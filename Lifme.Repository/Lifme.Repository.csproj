@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20180520032315_Migration inicial.cs" />
+    <Compile Remove="Migrations\20180520032847_Migration inicial.cs" />
+    <Compile Remove="Migrations\20180520033145_Migration inicial.cs" />
+    <Compile Remove="Migrations\20180531070807_Mudanças de Estrutura.cs" />
+    <Compile Remove="Migrations\20180603075209_Adicionando coluna.cs" />
+    <Compile Remove="Migrations\20180603182614_Adicionando Cascade.cs" />
+    <Compile Remove="Migrations\20180603182750_Adicionando Cascade.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lifme.Domain\Lifme.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
